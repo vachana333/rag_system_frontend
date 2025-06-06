@@ -6,7 +6,8 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 import streamlit as st
 from sidebar import display_sidebar
-from chat_interface import chat_with_model
+from chat_interface import display_chat_interface
+
 
 st.title("Langchain RAG Chatbot")
 
@@ -21,4 +22,5 @@ if "session_id" not in st.session_state:
 display_sidebar()
 
 # Display the chat interface
-chat_with_model()
+display_chat_interface()
+
